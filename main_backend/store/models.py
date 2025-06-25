@@ -2,16 +2,15 @@
 A Model for Store app
 """
 import base64
-from PIL import Image
 from io import BytesIO
 from django.core.files import File
 from django.db import models
+from PIL import Image
 from django.contrib.auth import get_user_model
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericRelation
 from django.conf import settings
-from versatileimagefield.fields import VersatileImageField, PPOIField
 
 # Getting the user model, Change if the main model changed
 User = get_user_model()
