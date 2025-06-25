@@ -2,6 +2,19 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Navbar', () => {
   test.beforeEach(async ({ page }) => {
+    await page.route('**/api/v1/categories/', route => {
+      route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: JSON.stringify({
+          results: [
+            { name: 'Books', slug: 'books' },
+            { name: 'Clothing', slug: 'clothing' },
+            { name: 'Electronics', slug: 'electronics' }
+          ]
+        })
+      });
+    });
     await page.goto('/');
   });
 
