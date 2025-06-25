@@ -1,6 +1,6 @@
 
 import { defineConfig } from '@playwright/test';
-
+// This is the Playwright configuration file for the frontend tests.
 export default defineConfig({
   testDir: './tests',
   timeout: 30000,
