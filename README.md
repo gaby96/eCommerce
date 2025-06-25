@@ -16,11 +16,11 @@ Clone the project
 
 Via SSH:
 ```bash
-git clone git@github.com:abdoohossamm/eCommerce.git
+git clone git@github.com:gaby96/eCommerce.git
 ```
 Via HTTPS:
 ```bash
-git clone https://github.com/abdoohossamm/eCommerce.git
+git clone https://github.com/gaby96/eCommerce.git
 ```
 
 Change directory to the cloned project

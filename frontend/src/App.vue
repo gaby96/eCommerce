@@ -11,11 +11,11 @@
       </div>
         <div class="navbar-menu" id="navbar-menu" v-bind:class="{'is-active': showMobileMenu}">
           <div class="navbar-start">
-            <router-link class="navbar-item" to="/">
+            <router-link class="navbar-item" id="home" to="/">
               Home
             </router-link>
 
-            <router-link class="navbar-item" to="/about">
+            <router-link class="navbar-item" id="about" to="/about">
               About
             </router-link>
 
@@ -84,7 +84,7 @@
     </section>
   </div>
   <footer class="footer">
-    <p class="has-text-centered">Copyright Abdoohossamm (c) 2022</p>
+    <p class="has-text-centered">Copyright Gabriel (c) 2025</p>
   </footer>
 </template>
 <script>

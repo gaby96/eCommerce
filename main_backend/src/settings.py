@@ -146,8 +146,8 @@ CELERY_BROKER_URL = f"redis://{os.getenv('MAIN_REDIS_HOST', 'localhost')}:{os.ge
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ADMINS = [
-    ("Abdoo", "abdoohossamm@outlook.com"),
-    ("abdoohossamm", "kmabdo28@gmail.com")
+    ("gabriel", "gabriel@outlook.com"),
+    ("gabrieladdo", "gabrieladdo64@gmail.com")
 ]
 
 # CORS
