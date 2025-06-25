@@ -7,26 +7,26 @@
           <div class="field">
             <label for="">Username</label>
             <div class="control">
-              <input type="text" class="input" id="username-input" v-model="username">
+              <input type="text" class="input" id="username-input" name="username" v-model="username">
             </div>
           </div>
           <div class="field">
             <label for="">Email</label>
             <div class="control">
-              <input type="email" class="input" id="email-input" v-model="email">
+              <input type="email" class="input" id="email-input" name="email" v-model="email">
             </div>
           </div>
           <div class="field">
             <label for="">Password</label>
             <div class="control">
-              <input type="password" class="input" id="password-input" v-model="password">
+              <input type="password" class="input" id="password-input" name="password" v-model="password">
             </div>
           </div>
 
           <div class="field">
             <label for="">Repeat password</label>
             <div class="control">
-              <input type="password" class="input" id="password2-input" v-model="password2">
+              <input type="password" class="input" id="password2-input" name="password2" v-model="password2">
             </div>
           </div>
 
@@ -36,7 +36,7 @@
 
           <div class="field">
             <div class="control">
-              <button class="button is-dark">Sign up</button>
+              <button class="button is-dark" type="submit">Sign up</button>
             </div>
           </div>
           <hr>
