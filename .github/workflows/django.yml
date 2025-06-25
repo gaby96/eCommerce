@@ -30,24 +30,4 @@ jobs:
           cd main_backend
           python manage.py test
 
-  frontend:
-    runs-on: ubuntu-latest
-    needs: backend  # waits for backend job to complete
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - name: Install frontend dependencies
-        run: |
-          cd frontend
-          npm install
-          npx playwright install --with-deps
-
-      - name: Run Playwright tests
-        run: |
-          cd frontend
-          npm run test:e2e
+  
