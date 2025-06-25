@@ -1,4 +1,4 @@
-// playwright.config.ts
+
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
@@ -7,7 +7,7 @@ export default defineConfig({
   retries: 0,
   use: {
     baseURL: 'http://localhost:8080',
-    headless: false,
+    headless: true,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
   },
